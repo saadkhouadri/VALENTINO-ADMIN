@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>VALENTINO CITY S1 - Admin Demand</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg, #111, #1e1e1e);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        width: 400px;
+        background: #1b1b1b;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255,0,0,0.3);
+        color: white;
+    }
+
+    .container h1{
+        text-align: center;
+        margin-bottom: 10px;
+        color: #ff2e2e;
+    }
+
+    .container p{
+        text-align: center;
+        margin-bottom: 25px;
+        color: #ccc;
+        font-size: 14px;
+    }
+
+    .input-box{
+        margin-bottom: 18px;
+    }
+
+    .input-box label{
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: #2c2c2c;
+        color: white;
+        outline: none;
+    }
+
+    .input-box textarea{
+        resize: none;
+        height: 90px;
+    }
+
+    .btn{
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: #ff2e2e;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover{
+        background: #ff5555;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>VALENTINO CITY S1</h1>
+    <p>Admin Demand Form</p>
+
+<form action="https://formsubmit.co/sadmaroc12@gmail.com" method="POST">
+
+    <div class="input-box">
+        <label>IRL Name</label>
+        <input type="text" name="IRL Name" required>
+    </div>
+
+    <div class="input-box">
+        <label>Age</label>
+        <input type="number" name="Age" required>
+    </div>
+
+    <div class="input-box">
+        <label>Email</label>
+        <input 
+            type="email"
+            name="Email"
+            pattern=".+@gmail\.com"
+            placeholder="example@gmail.com"
+            title="Only Gmail allowed"
+            required>
+    </div>
+
+    <div class="input-box">
+        <label>RP Name</label>
+        <input type="text" name="RP Name" required>
+    </div>
+
+    <div class="input-box">
+        <label>Why do you want admin?</label>
+        <textarea name="Reason" required></textarea>
+    </div>
+
+    <button class="btn">Send Demand</button>
+
+</form>
+</div>
+
+</body>
+</html>
